@@ -1,0 +1,194 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0a0c1b;
+}
+.container {
+  display: flex;
+  width: 75%;
+  height: 380px;
+  margin-top: 6rem;
+}
+
+.first-container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #1c1938;
+  color: white;
+  border-radius: 10px 0px 0px 10px;
+}
+.author{
+  display: flex;
+  color: white;
+  margin-top: 4rem;
+  text-decoration: none;
+  
+}
+
+span {
+  color: #9866bf;
+}
+.first-description {
+  font-family: "Red Hat Display", sans-serif;
+
+  width: 70%;
+  height: 80px;
+  margin-top: 60px;
+  margin-left: 60px;
+  line-height: 1;
+}
+.first-description h2 {
+  font-size: 35px;
+}
+
+.second-description {
+  font-size: 14px;
+  font-family: "Red Hat Display", sans-serif;
+  width: 65%;
+  height: 80px;
+  margin-top: 15px;
+  margin-left: 60px;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.6;
+}
+
+.child-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 120px;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.first-child,
+.second-child,
+.third-child {
+  width: 25%;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.description {
+  font-size: 12px;
+  margin-top: 5px;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 1px;
+}
+
+.second-child,
+.third-child {
+  padding: 0 1.2rem;
+}
+
+.second-container {
+  background: linear-gradient(
+      to top,
+      rgba(99, 34, 136, 0.7),
+      rgba(99, 34, 136, 0.7)
+    ),
+    url(images/image-header-desktop.jpg);
+  width: 50%;
+  height: 100%;
+  border-radius: 0px 10px 10px 0px;
+}
+
+@media (max-width: 576px) {
+  .main {
+    width: 100%;
+    height: 100%;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 90%;
+    height: 100%;
+    margin-top: 7rem;
+    margin-bottom: 4rem;
+  }
+
+  .first-container {
+    width: 100%;
+    height: 600px;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .second-container {
+    background-size: cover;
+    width: 100%;
+    height: 320px;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .first-description {
+    width: 70%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 3.5rem;
+    transform: translateY(-50px);
+  }
+
+  .second-description {
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3.5rem;
+    font-size: 17px;
+    text-align: center;
+    transform: translateY(-80px);
+  }
+
+  .child-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    height: 240px;
+    transform: translateY(-40px);
+  }
+
+  .first-child,
+  .second-child,
+  .third-child {
+    margin: 20px;
+    height: 50px;
+    width: 40%;
+  }
+  .description {
+    font-size: 14px;
+  }
+
+  .author{
+    display: flex;
+    color: white;
+    transform: translateY(-50px);
+    text-decoration: none;
+    
+  }
+}
